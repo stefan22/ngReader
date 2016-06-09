@@ -44,7 +44,7 @@ myApp.controller('MailListingController', ['$scope','$http', function($scope,$ht
 	}).
 	success(function(data,status,headers) {
 		$scope.email = data.all;
-		console.log('yay');
+		
 	}).
 	error(function(data,status,headers) {
 		console.log('no way!');
