@@ -1,0 +1,59 @@
+<section id="settings">
+
+	<div class="row">
+		<form name="form" ng-submit="updateSettings()">
+			<fieldset>
+				<legend>Update settings</legend>
+				<div class="row">
+					<div class="small-8 columns">
+						<label>Name</label>
+						<input type="text" name="name" placeholder="enter name"
+								ng-model="settings.name" ng-minlength="3" ng-maxlength="20" ng-pattern="/^[a-zA-Z]+$/" required />
+								<div ng-show="form.name.$invalid && form.name.$dirty">
+									<p ng-show="form.name.$error.required">Your name is a required field</p>
+									<p ng-show="form.name.$error.minlength">Your name must be greater than 3 characters</p>
+									<p ng-show="form.name.$error.maxlength">Your name must be less than 20 characters</p>
+								</div>				
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-8 columns">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="enter email"
+								ng-model="settings.email" required />
+								<div ng-show="form.email.$invalid && form.email.$dirty">
+									<p ng-show="form.email.$error.required">That is not a valid email</p>
+								</div>				
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-8 columns">
+						<label>Age</label>
+						<input type="number" name="age" placeholder="enter age"
+								ng-model="settings.age" min="18" max="200" />
+								<div ng-show="form.age.$invalid && form.age.$dirty">
+									<span ng-show="form.age.$error.min">You must be at least 18</span>
+									<span ng-show="form.age.$error.max">You cannot be over 200</span>									
+								</div>				
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-8 columns">						
+						<button type="submit" class="button" ng-disabled="form.$invalid && form.$dirty">Update</button>
+						<span ng-show="form.$invalid && form.$dirty">Please fill all required fields prior to submitting form</span>				
+					</div>
+				</div>
+
+			</fieldset>
+
+
+			
+		</form>
+	</div>
+
+</section>
+
+

@@ -1,0 +1,43 @@
+{"all": [
+    {
+			"id": 1,
+			"from": "joe@gmail.com",
+			"to": "jen@gmail.com",
+			"subject": "Great Job",
+			"body": "Congrats on the release of the book!"
+	},
+    
+    {
+			"id": 2,
+			"from": "mark@gmail.com",
+			"to": "jen@gmail.com",
+			"subject": "Great Bar",
+			"body": "Congrats on the release of the movie!"
+	},
+
+	{
+			"id": 3,
+			"from": "frank@gmail.com",
+			"to": "jen@gmail.com",
+			"subject": "Great Outcome",
+			"body": "Congrats congrats!"
+	},
+
+	{
+			"id": 4,
+			"from": "thomas@gmail.com",
+			"to": "jen@gmail.com",
+			"subject": "Great Dog",
+			"body": "Congrats on the release of that dog!"
+	},
+
+	{
+			"id": 5,
+			"from": "alex@gmail.com",
+			"to": "jen@gmail.com",
+			"subject": "Great SUV",
+			"body": "Congrats on that new SUV of yours!"
+	}
+]
+
+}

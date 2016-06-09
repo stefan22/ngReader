@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.min.css">    
+    <link rel="stylesheet" href="css/style.css">    
+  </head>
+  <body>
+
+    <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text"><a href="#/">Ng Reader</a></li>              
+              
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+            <li><a href="#/email">Email</a></li>
+              <li><a href="#/settings">Settings</a></li>
+             
+            </ul>
+          </div>
+    </div>
+   
+    <main class="main">
+
+        <ng-view></ng-view>
+
+    </main> 
+
+    
+
+    <script src="src/foundation/vendor/jquery.js"></script>
+    <script src="src/foundation/vendor/what-input.js"></script>
+    <script src="src/foundation/vendor/foundation.js"></script>
+    <script type="text/javascript" src="src/angular/angular.min.js"></script>
+    <script type="text/javascript" src="src/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+    
+   
+  </body>
+</html>
