@@ -1,1 +1,34 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>Lowercase is a built-in filter -- added capitalize</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
+</head>
+<body>
 
+  <div ng-controller="MyController">
+
+	   <p>{{ text | lowercase | capitalize }}</p>
+
+  </div>
+
+    <script type="text/javascript">
+    
+    	var myApp = angular.module('myApp',[]);
+    
+    	var myController =  myApp.controller('MyController',["$scope", function($scope) {
+    	  	$scope.text = "she is crazy";
+    	}]);
+    
+    
+    	myController.filter('capitalize', function() {
+    		return function(input) {
+    			return input[0].toUpperCase() + input.slice(1);
+    		};
+    
+    	});
+    
+    </script>
+
+  </body>
+</html>
